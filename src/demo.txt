@@ -1,0 +1,34 @@
+
+
+Key Technologies:
+
+Vite: Optimized build tool with fast development startup.
+
+Tailwind CSS: Utility-first CSS for responsive design; minimal styling to focus on logic.
+
+Formik: Simplified form handling and validation.
+
+Yup: Schema-based form validation, used with Formik.
+
+Axios: For API requests and data fetching.
+
+React Router: Client-side routing for SPA functionality.
+
+Tailwind-Merge: Resolves conflicts in dynamic utility class merging.
+
+
+Installation:
+
+1. npm install
+2. npm run dev
+
+Conclusion:
+
+Focused on logic, performance, and reusability.
+
+Optimized with libraries like Formik, Yup, and Axios.
+
+Tailwind CSS used for efficient, minimal and dynamic styling.
+
+demo Link : https://www.awesomescreenshot.com/video/40400274?key=6cf4690cf9665989cee43c1b351c4b67
+
