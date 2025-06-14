@@ -9,4 +9,18 @@ const axiosInstance = axios.create({
     },
 });
 
+axiosInstance.interceptors.request.use((config) => {
+    const token = localStorage.getItem("token");
+    const protectedRoutes = ['/protected-route1', '/secure/data']; 
+    const isProtected = protectedRoutes.some(route => config.url?.includes(route));
+
+    if (token && isProtected) {
+        config.headers.Authorization = `Bearer ${token}`;
+    }
+
+    return config;
+}, (error) => {
+    return Promise.reject(error);
+});
+
 export default axiosInstance;
